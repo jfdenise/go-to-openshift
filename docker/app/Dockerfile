@@ -1,4 +1,4 @@
-FROM quay.io/jdenise/pipeline-wildfly-server:729382b0c0ed949a5b32ba3dadfd5d8e
+FROM quay.io/jdenise/pipeline-wildfly-server:b3b5909c9efb34ec30bda3bca9022f0e
 COPY --chown=jboss:root deployments/* $JBOSS_HOME/standalone/deployments
 COPY --chown=jboss:root extensions $JBOSS_HOME/extensions
 RUN chmod ug+rwx $JBOSS_HOME/extensions/postconfigure.sh
