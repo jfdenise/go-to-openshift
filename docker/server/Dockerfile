@@ -1,5 +1,7 @@
 LABEL org.wildfly.glow.feature-packs=wildfly-galleon-pack_32.0.0.Final,wildfly-cloud-galleon-pack_7.0.0.Final
 LABEL org.wildfly.glow.layers=ee-core-profile-server,jaxrs,jpa,ejb-lite,jsf,h2-driver
+MY_ENV=XXXTHURSDAY
+POSTGRESQL_DRIVER_VERION=2
 FROM quay.io/wildfly/wildfly-runtime:latest
 COPY server $JBOSS_HOME
 USER root
